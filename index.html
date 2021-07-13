@@ -8,37 +8,52 @@
         body{
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            color: black;
+             
             
         }
 
         nav{
-            background-color:teal;
+            position:absolute;
+            top:0px;
+            left:0px;
+            display: flex;
+            justify-content: space-between;
             height:50px;
             width:100vw;
             
         }
 
         figure{
-            background-color:thistle;
-            height:50px;
-            width:50px;
+            position: absolute;
+            align-self: center;
+            top : 20vh;
+            
         }
 
         form{
-            background-color: turquoise;
-            height:50px;
-            width:50px;
+            position: absolute;
+            bottom:50vh;
+            align-self: center;
+            
         }
 
         footer{
-            margin:270px 0px 0px -10px;
-            display:flex;
+            position: absolute;
+            bottom: -30px;
+            left:0;
+            width: 100vw;
+            display: flex;
             justify-content: space-between;
-            background-color: darkgrey;
-            height:50px;
-            width:100vw;
+            background-color: lightgray;
+            height: 40px;
+
         }
+        .buttons{
+            color:black;
+            opacity: 0.60;
+            font-style: normal;
+        }   
     </style>
 <nav>
     <div id="top-left">
@@ -71,12 +86,12 @@
 
 
 <footer>
-    <div id="bottom-left">
+    <div id="bottom-left" class="buttons">
         <a href="#">Adversating</a>
         <a href="#">Business</a>
         <a href="#">How Search Works</a>
     </div>
-    <div id="bottom-right">
+    <div id="bottom-right" class="buttons">
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
         <a href="#">Settings</a>
