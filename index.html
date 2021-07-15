@@ -1,102 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-    
-</head>
-<body>
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            color: black;
-             
-            
-        }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="styles/style.css">
 
-        nav{
-            position:absolute;
-            top:0px;
-            left:0px;
-            display: flex;
-            justify-content: space-between;
-            height:50px;
-            width:100vw;
-            
-        }
-
-        figure{
-            position: absolute;
-            align-self: center;
-            top : 20vh;
-            
-        }
-
-        form{
-            position: absolute;
-            bottom:50vh;
-            align-self: center;
-            
-        }
-
-        footer{
-            position: absolute;
-            bottom: -30px;
-            left:0;
-            width: 100vw;
-            display: flex;
-            justify-content: space-between;
-            background-color: lightgray;
-            height: 40px;
-
-        }
-        .buttons{
-            color:black;
-            opacity: 0.60;
-            font-style: normal;
-        }   
-    </style>
-<nav>
-    <div id="top-left">
-        <a href="#">About</a>
-        <a href="#">Store</a>
-    </div>
-    <div id="top-right">
-        <a h
-            ref="#">Gmail</a>
-        <a href="#">Images</a>
-        <img src="outline_apps_black_24dp.png">
-        <a href="#">Sign In</a>
-    </div>
-    
-</nav>
-<figure>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    
-</figure>
-
-
-<form>
-    
-    <input type="text">
-    <br>
-    <button type="submit">Google Search</button>
-    <button type="submit">I'm Feeling Lucky</button>
-    
-</form>
-
-
-<footer>
-    <div id="bottom-left" class="buttons">
-        <a href="#">Adversating</a>
-        <a href="#">Business</a>
-        <a href="#">How Search Works</a>
-    </div>
-    <div id="bottom-right" class="buttons">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Settings</a>
-    </div>
-</footer>
-
-</body>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="top-left-section">
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Store</a>
+      </div>
+      <div class="top-right-section">
+        <a class="nav-link" href="#">Gmail</a>
+        <a class="nav-link" href="#">Images</a>
+        <button class="button-apps" href="#"><img src="images/outline_apps_black_24dp.png"></button>
+        <button id="button-signin" href="#">Sign In</button>
+        
+        </a>
+      </div>
+    </nav>
+    <main class="main">
+      <img class="logo" src="images/google-logo.png" alt="">
+      <div class="searchbar">
+        <img class="search-icon" src="images/google-search.png" alt="">
+        <input class="search-input" type="text">
+        <button>
+          <img class="microphone-icon" src="images/google-microphone.png" alt="">
+        </button>
+      </div>
+      <div class="search-buttons">
+        <button class="button-search">Google search</button>
+        <button class="button-search">I'm Feeling Lucky</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="left-section">
+        <a class="footer-link" href="#">Advertising</a>
+        <a class="footer-link" href="#">Business</a>
+        <a class="footer-link" href="#">About</a>
+        <a class="footer-link" href="#">How Search works</a>
+      </div>
+      <div class="right-section">
+        <a class="footer-link" href="#">Privacy</a>
+        <a class="footer-link" href="#">Terms</a>
+        <a class="footer-link" href="#">Settings</a>
+      </div>
+    </footer>
+  </body>
 </html>
